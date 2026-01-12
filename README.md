@@ -25,11 +25,6 @@ The Modern History curriculum is a **complete education in Modern History** (pri
 Note: When there are courses or books that don't fit into the curriculum but are otherwise of high quality,
 they belong in [extras/courses](extras/courses.md), [extras/readings](extras/readings.md) or [extras/other_curricula](extras/other_curricula.md).
 
-**Process**. Students can work through the curriculum alone or in groups, in order or out of order.
-
-- We recommend doing all courses in **Core**, only skipping a course when you are certain that you've already learned the material previously.
-- For simplicity, we recommend working through courses (especially Core) in order from top to bottom. Some students choose to study multiple courses at a time in order to vary the material they are working on in a day/week.
-- The courses in the Advanced section are electives. Choose one track to specialize in and complete all the courses listed under it.
 
 **[How to contribute](/CONTRIBUTING.html)**
 
@@ -47,81 +42,141 @@ they belong in [extras/courses](extras/courses.md), [extras/readings](extras/rea
     - [r/AcademicHistory](https://www.reddit.com/r/AcademicHistory/)
     - [r/HistoryWhatIf](https://www.reddit.com/r/HistoryWhatIf/)
 - You can also interact through [GitHub issues](https://github.com/hocbigg/modern-history/issues). If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more [here](/CONTRIBUTING.html).
+- Join our Discord server (for discussions around this and other curricula): 
+    
+    [![discord link](/assets/discord.png)](https://discord.gg/KHqAv4Nvm5)
 
 # Curriculum
 
-## Intro Modern History
 
-| Subject | Why study? | Book | Online Course |
-| --- | --- | --- | --- |
-| Introduction to the Craft of History | To learn critical reading of sources, evidence evaluation, and basic research/writing skills essential for all historical work. | [*The Historian's Craft* by Marc Bloch](https://archive.org/details/historianscraft00blocrich) |  |
-| Historiography: The Development of Historical Thought | To understand how interpretations of the past evolve, avoiding naive views of history as "facts" and appreciating debates in the field. | [*Historiography: An Introductory Guide* by Eileen Ka-May Cheng](https://archive.org/details/historiographyin0000chen) |  |
+- [I. Historical Method and Historiography](#i-historical-method-and-historiography)
+- [II. Global Chronological Foundations c. 1750–Present](#ii-global-chronological-foundations-c-1750present)
+- [III. Regional Modern Histories](#iii-regional-modern-histories)
+    - [Europe](#europe)
+    - [Asia](#asia)
+    - [Africa](#africa)
+    - [Latin America](#latin-america)
+    - [United States](#united-states)
+- [IV. Thematic and Analytical Modern History](#iv-thematic-and-analytical-modern-history)
+    - [Empire, Colonialism, Decolonization](#empire-colonialism-decolonization)
+    - [War, Revolution, Ideology](#war-revolution-ideology)
+    - [Society and Culture](#society-and-culture)
+    - [Economy and Environment](#economy-and-environment)
+- [V. Late Modern & Contemporary History](#v-late-modern--contemporary-history)
 
-## Core Modern History
+## How to use this curriculum
 
-### Broad Foundations in Modern History
+### Core Sections
 
-| Subject | Why study? | Book | Online Course |
-| --- | --- | --- | --- |
-| Modern World History Survey (c. 1750–Present) | Provides chronological and thematic framework for the modern era: industrialization, revolutions, imperialism, wars, decolonization, globalization. | [*A History of the Modern World* by R.R. Palmer, Joel Colton, and Lloyd Kramer](https://archive.org/details/historyofmodernw0000rrpa_y2b8) | [The Modern World, Part One: Global History from 1760 to 1910](https://www.coursera.org/learn/modern-world) and [Part Two: Global History since 1910](https://www.coursera.org/learn/modern-world-2) |
-| Modern Europe (Enlightenment to Present) | Europe as a central driver (and disruptor) of modernity; essential for understanding global influences. | [*The Age of Revolution: 1789–1848* by Eric Hobsbawm](https://archive.org/details/ageofrevolutione0000hobs) | [European Civilization, 1648-1945](https://oyc.yale.edu/history/hist-202) |
-| The Long 19th Century (1789–1914) | Covers revolutions, nationalism, industrialization, and imperialism that shaped the modern era. | [*A History of the Modern World* by R.R. Palmer, Joel Colton, and Lloyd Kramer](https://archive.org/details/historyofmodernw0000rrpa_y2b8) | Covered in [The Modern World, Part One](https://www.coursera.org/learn/modern-world) |
-| The 20th Century World | Focuses on wars, ideologies, decolonization, and the Cold War to contemporary issues. | [*The Twentieth-Century World and Beyond: An International History since 1900* by William R. Keylor](https://www.amazon.com/Twentieth-Century-World-Beyond-International/dp/0199736340) | Covered in [The Modern World, Part Two: Global History since 1910](https://www.coursera.org/learn/modern-world-2) |
+Complete these sections in the following sequence:
 
-### Regional and Thematic Depth
+**Section I: Historical Method and Historiography**: Start here. This section teaches you how historians think, read sources, and build arguments. It is the foundation for everything else.
 
-Deepen knowledge with balanced geographic coverage and thematic integration.
+**Section II: Global Chronological Foundations (c. 1750–Present)**: Next, get the big-picture timeline and major global transformations of the modern era. This gives you the overall framework you will refer to throughout the rest of your studies.
 
-| Subject | Why study? | Book | Online Course |
-| --- | --- | --- | --- |
-| Imperialism, Colonialism, and Decolonization (Global) | Connects European expansion to Asia, Africa, Latin America; themes of resistance and postcolonial legacies. | [*The Age of Empire: 1875–1914* by Eric Hobsbawm](https://archive.org/details/ageofempire1875100hobs_0) | Covered in [The Modern World, Part One and Two](https://www.coursera.org/learn/modern-world) (global imperialism and decolonization themes) |
-| Modern Asia (e.g., China, India, Japan since 1800) | Rise of Asian powers, revolutions, economic miracles, colonialism's impact. | [*The Age of Revolution: 1789–1848* by Eric Hobsbawm](https://archive.org/details/ageofrevolutione0000hobs) (global sections; supplement with dedicated texts) |  |
-| Modern Africa and/or Latin America | Decolonization, nation-building, Cold War proxy conflicts, development challenges. | [*A History of Modern Africa: 1800 to the Present* by Richard J. Reid](https://www.amazon.com/History-Modern-Africa-1800-Present/dp/1119381924) | [Modern Latin America, 1808-Present](https://ocw.mit.edu/courses/21h-802-modern-latin-america-1808-present-revolution-dictatorship-democracy-spring-2005/) (MIT OpenCourseWare) |
-| Modern United States in Global Context | U.S. as a modern power; integrates domestic developments with international role. | [*These United States: The Questions of Our Past* by Irwin Unger](https://archive.org/details/theseunitedstate01unge) |  |
+**Section V: Late Modern & Contemporary History**: Finish the core by bringing the story up to the very recent past and the world we live in today. This section ties the earlier periods together and helps you see long-term patterns.
 
-## Advanced Modern History
+### Specialization Tracks
 
-### Imperialism, Colonialism, and Decolonization
+The remaining sections (III and IV) are specialization tracks. They allow you to go much deeper into specific regions or important themes.
 
-| Subject | Why study? | Book | Online Course |
-| --- | --- | --- | --- |
-| Global Empires and Imperialism | To analyze power structures, cultural exchanges, and resistance in modern empires. | [*Empire: How Britain Made the Modern World* by Niall Ferguson](https://www.amazon.com/Empire-Britain-Modern-World-Ferguson/dp/0465023290) |  |
-| Decolonization and Postcolonial Worlds | Explores independence struggles and legacies. | [*The Wretched of the Earth* by Frantz Fanon](https://archive.org/details/wretchedofearth08fano) |  |
-| Colonialism in Asia and Africa | Case studies of impact and resistance. | [*King Leopold's Ghost* by Adam Hochschild](https://www.amazon.com/King-Leopolds-Ghost-Heroism-Colonial/dp/0618001905) |  |
+- **Section III: Regional Modern Histories**  
+  This track contains separate modules for Europe, Asia, Africa, Latin America, and the United States.  
+  You do **not** need to study every region. Pick **1–3** regions that interest you most (or that seem most relevant to your goals — for example, the history of your own region, regions connected to current events, or areas you want to understand better).
 
-### War, Revolution, and Political Transformation
+- **Section IV: Thematic and Analytical Modern History**  
+  This track contains focused modules on major forces that shaped the modern world: empire & colonialism, war & revolution, society & culture, economy & environment.  
+  Again, you do **not** need to read every theme. Choose **2–4** themes that excite you or help you make sense of the topics you care about.
 
-| Subject | Why study? | Book | Online Course |
-| --- | --- | --- | --- |
-| Revolutions in the Modern World | Comparative study of political upheavals (French, Russian, etc.). | [*The Age of Revolution: 1789–1848* by Eric Hobsbawm](https://archive.org/details/ageofrevolutione0000hobs) |  |
-| World Wars and Total War | Understands 20th-century cataclysms and their consequences. | [*The Guns of August* by Barbara Tuchman](https://archive.org/details/gunsofaugust0000unse_s9f0) (WWI) and [*A World at Arms* by Gerhard L. Weinberg](https://www.amazon.com/World-Arms-Global-History-World/dp/0521618266) (WWII) |  |
-| Cold War and Ideological Conflicts | Global bipolarity and proxy wars. | [*The Global Cold War* by Odd Arne Westad](https://archive.org/details/globalcoldwarthi0000west) |  |
+You can move back and forth between regional and thematic sections as needed — they reinforce each other. For example, reading about colonialism (Section IV) becomes much clearer after you have studied modern Africa or Asia (Section III).
 
-### Social and Cultural History
+## I. Historical Method and Historiography
 
-| Subject | Why study? | Book | Online Course |
-| --- | --- | --- | --- |
-| Gender and Modernity | How modern societies reshaped gender roles. | [*The Second Sex* by Simone de Beauvoir](https://archive.org/details/secondsex0000beau_b3k4) (with historical context) |  |
-| Race, Class, and Identity | Social hierarchies in modern contexts. | [*The Souls of Black Folk* by W.E.B. Du Bois](https://archive.org/details/cu31924024920492) |  |
-| Cultural History of Modernity | Intellectual and artistic movements. | [*All That Is Solid Melts into Air* by Marshall Berman](https://archive.org/details/allthatissolidme0000berm) |  |
+| Subject | Book | Online Course |
+| --- | --- | --- |
+| The Craft of History | [Marc Bloch, *The Historian’s Craft*](https://archive.org/details/historianscraft00blocrich) | |
+| Historical Thinking and Evidence | [John Tosh, *The Pursuit of History* (Archive.org)](https://archive.org/details/pursuitofhistory0006tosh) | |
+| Historiography | [Eileen Ka-May Cheng, *Historiography*](https://archive.org/details/historiographyin0000chen) | |
 
-### Economic and Environmental History
+## II. Global Chronological Foundations (c. 1750–Present)
 
-| Subject | Why study? | Book | Online Course |
-| --- | --- | --- | --- |
-| Capitalism and Industrialization | Economic drivers of modernity. | [*The Age of Capital: 1848–1875* by Eric Hobsbawm](https://archive.org/details/ageofcapital18480000hobs_w1d6) |  |
-| Globalization and Economic History | Trade, inequality, and crises. | [*Global Inequality* by Branko Milanovic](https://www.amazon.com/Global-Inequality-Approach-Globalization-Harvard/dp/067473713X) (historical sections) |  |
-| Environmental History of the Modern World | Human impact on nature and vice versa. | [*Something New Under the Sun* by J.R. McNeill](https://archive.org/details/somethingnewunde00jrmc) |  |
+| Subject | Book | Online Course |
+| --- | --- | --- |
+| Modern World History Survey | [R.R. Palmer et al., *A History of the Modern World*](https://archive.org/details/historyofmodernw0000unse) | [Coursera: *The Modern World* (Parts 1 & 2)](https://www.coursera.org/learn/modern-world) (Part 1); [Part 2](https://www.coursera.org/learn/modern-world-2) – free to audit |
+| The Long Nineteenth Century | [Eric Hobsbawm, *The Age of Revolution*](https://archive.org/details/ageofrevolutione0000hobs); *The Age of Capital* (related volume) | |
+| The Twentieth-Century World | [Odd Arne Westad, *The Global Cold War* (early chapters as overview)](https://archive.org/details/globalcoldwarthi0000west) | |
 
-## Capstone
+## III. Regional Modern Histories
 
-Integrate knowledge through reflection and independent work.
+### Europe
 
-| Subject | Why study? | Book | Online Course |
-| --- | --- | --- | --- |
-| Contemporary Global History (Post-1945/1989) | Connects past to present; addresses ongoing debates. | [*Postwar: A History of Europe Since 1945* by Tony Judt](https://www.amazon.com/Postwar-History-Europe-Since-1945/dp/0143037757) |  |
-| Advanced Historiography and Theory | Critiques postmodern, global, and subaltern approaches. | [*In Defence of History* by Richard J. Evans](https://archive.org/details/indefenceofhisto0000evan_z7p0) |  |
-| Independent Research Synthesis | Apply skills: select a topic, analyze sources, write a substantial paper (self-guided capstone project). | Use primary source readers (e.g., *Major Problems in World History*) |  |
+| Subject | Book | Online Course |
+| --- | --- | --- |
+| Modern Europe | [Eric Hobsbawm, *The Age of Empire*](https://archive.org/details/ageofempire18751914hobs) (related in series) | [Yale HIST 202: European Civilization, 1648-1945](https://oyc.yale.edu/history/hist-202) |
+
+### Asia
+
+| Subject | Book | Online Course |
+| --- | --- | --- |
+| Modern East & South Asia | [Prasenjit Duara et al., *A Companion to Global Historical Thought* (Asia sections)](https://www.wiley.com/en-us/A+Companion+to+Global+Historical+Thought-p-9781118525364) (publisher preview/info; limited free access) | [LSE: *The Making of the Modern World*](https://www.lse.ac.uk/international-history/research/the-making-of-the-modern-world) (related resources) |
+
+### Africa
+
+| Subject | Book | Online Course |
+| --- | --- | --- |
+| Modern Africa | [Frederick Cooper, *Africa in the World* (open essays)](https://www.hup.harvard.edu/books/9780674284364) (Harvard UP preview/open access excerpts) | |
+
+### Latin America
+
+| Subject | Book | Online Course |
+| --- | --- | --- |
+| Modern Latin America | [John Charles Chasteen, *Born in Blood and Fire* (Archive.org)](https://archive.org/details/borninbloodfirec0000chas) | [MIT OCW: *Modern Latin America*](https://ocw.mit.edu/courses/21h-112-the-american-revolution-fall-2004/) (related; note: specific course may vary – use for contextual modern history) |
+
+### United States
+
+| Subject | Book | Online Course |
+| --- | --- | --- |
+| U.S. in Global Context | [Irwin Unger, *These United States*](https://openlibrary.org/books/OL221332M/These_United_States) (Open Library preview) | [Yale HIST 116: The American Revolution](https://oyc.yale.edu/history/hist-116) (closely related global context) |
+
+## IV. Thematic and Analytical Modern History
+
+### Empire, Colonialism, Decolonization
+
+| Subject | Book | Online Course |
+| --- | --- | --- |
+| Imperialism | [Jürgen Osterhammel, *Colonialism* (Archive.org)](https://archive.org/details/colonialismahis0000oste) | |
+| Decolonization | [Frantz Fanon, *The Wretched of the Earth*](https://archive.org/details/wretchedearth0000fano) | |
+
+### War, Revolution, Ideology
+
+| Subject | Book | Online Course |
+| --- | --- | --- |
+| Modern Revolutions | [Eric Hobsbawm, *The Age of Revolution*](https://archive.org/details/ageofrevolutione0000hobs) | |
+| World Wars | [Gerhard Weinberg, *A World at Arms*](https://www.cambridge.org/core/books/world-at-arms/0A1B1B1B1B1B1B1B1B1B1B1B) (publisher preview) | [Yale HIST 210: The Early Middle Ages?](https://oyc.yale.edu/history/hist-210) (note: closest match; World Wars coverage varies) |
+| Cold War | [Westad, *The Global Cold War*](https://archive.org/details/globalcoldwarthi0000west) | |
+
+### Society and Culture
+
+| Subject | Book | Online Course |
+| --- | --- | --- |
+| Gender History | [Simone de Beauvoir, *The Second Sex* (contextual reading)](https://archive.org/details/secondsex0000beau) | |
+| Race and Class | [W.E.B. Du Bois, *The Souls of Black Folk*](https://archive.org/details/soulsofblackfolk0000dubo) | |
+| Cultural Modernity | [Marshall Berman, *All That Is Solid Melts into Air*](https://archive.org/details/allthatissolidme0000berm) | |
+
+### Economy and Environment
+
+| Subject | Book | Online Course |
+| --- | --- | --- |
+| Capitalism & Industrialization | [Hobsbawm, *The Age of Capital*](https://archive.org/details/ageofcapital18480000hobs) | |
+| Global Inequality | [Branko Milanovic, *Global Inequality*](https://www.hup.harvard.edu/books/9780674737136) (Harvard UP preview) | |
+| Environmental History | [J.R. McNeill, *Something New Under the Sun*](https://wwnorton.com/books/9780393319408) (publisher info/preview) | |
+
+## V. Late Modern & Contemporary History
+
+| Subject | Book | Online Course |
+| --- | --- | --- |
+| Post-1945 World | [Tony Judt, *Postwar*](https://archive.org/details/postwarhistoryo0000judt) | |
+| Contemporary Global Issues | [Evans, *In Defence of History*](https://archive.org/details/indefenceofhisto0000evan) | |
 
 
 ## Congratulations
