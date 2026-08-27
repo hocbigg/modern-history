@@ -14,8 +14,6 @@
 - **Social, Cultural, and Intellectual History:** Analyzes the evolution of social classes, everyday mentalities, institutional biopolitics, and modern conceptual systems.
 - **Advanced Methodologies, Spatial History, and Digital Humanities:** Equips researchers with computational, spatial (GIS), and oral history toolkits for advanced historical investigation.
 
----
-
 ## Global Imperialism, Decolonization, and Subaltern Studies
 
 | Topic | Why Study | Resources |
