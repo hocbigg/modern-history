@@ -1,89 +1,58 @@
 # Advanced Topics
 
-- [Regional Modern Histories](#regional-modern-histories)
-    - [Europe](#europe)
-    - [Asia](#asia)
-    - [Africa](#africa)
-    - [Latin America](#latin-america)
-    - [United States](#united-states)
-- [Thematic and Analytical Modern History](#thematic-and-analytical-modern-history)
-    - [Empire, Colonialism, Decolonization](#empire-colonialism-decolonization)
-    - [War, Revolution, Ideology](#war-revolution-ideology)
-    - [Society and Culture](#society-and-culture)
-    - [Economy and Environment](#economy-and-environment)
+- [Global Imperialism, Decolonization, and Subaltern Studies](#global-imperialism-decolonization-and-subaltern-studies)
+- [Totalitarianism, Mass Violence, and Modern Warfare](#totalitarianism-mass-violence-and-modern-warfare)
+- [Global Capitalism, Commodity Chains, and Environmental History](#global-capitalism-commodity-chains-and-environmental-history)
+- [Social, Cultural, and Intellectual History](#social-cultural-and-intellectual-history)
+- [Advanced Methodologies, Spatial History, and Digital Humanities](#advanced-methodologies-spatial-history-and-digital-humanities)
 
+### Track Overview
 
-- **Regional Modern Histories**  
-  This track contains separate modules for Europe, Asia, Africa, Latin America, and the United States.  
-  You do **not** need to study every region. Pick **1–3** regions that interest you most (or that seem most relevant to your goals — for example, the history of your own region, regions connected to current events, or areas you want to understand better).
+- **Global Imperialism, Decolonization, and Subaltern Studies:** Investigates the mechanics of imperial statecraft, anticolonial revolutions, and subaltern theoretical critiques of Eurocentric history.
+- **Totalitarianism, Mass Violence, and Modern Warfare:** Explores the ideological roots of totalitarian governance, comparative genocide, and the strategic dimensions of total war and nuclear deterrence.
+- **Global Capitalism, Commodity Chains, and Environmental History:** Examines the material drivers of modern development, cross-continental commodity circuits, the Great Divergence, and the ecological shifts of the Anthropocene.
+- **Social, Cultural, and Intellectual History:** Analyzes the evolution of social classes, everyday mentalities, institutional biopolitics, and modern conceptual systems.
+- **Advanced Methodologies, Spatial History, and Digital Humanities:** Equips researchers with computational, spatial (GIS), and oral history toolkits for advanced historical investigation.
 
-- **Thematic and Analytical Modern History**  
-  This track contains focused modules on major forces that shaped the modern world: empire & colonialism, war & revolution, society & culture, economy & environment.  
-  Again, you do **not** need to read every theme. Choose **2–4** themes that excite you or help you make sense of the topics you care about.
+---
 
-You can move back and forth between regional and thematic sections as needed — they reinforce each other. For example, reading about colonialism (Section IV) becomes much clearer after you have studied modern Africa or Asia (Section III).
+## Global Imperialism, Decolonization, and Subaltern Studies
 
-## Regional Modern Histories
-
-### Europe
-
-| Subject | Book | Online Course |
+| Topic | Why Study | Resources |
 | --- | --- | --- |
-| Modern Europe | [Eric Hobsbawm, *The Age of Empire*](https://archive.org/details/ageofempire18751914hobs) (related in series) | [Yale HIST 202: European Civilization, 1648-1945](https://oyc.yale.edu/history/hist-202) |
+| Imperial Governance and Colonial Formations | Analyzes the administrative, legal, and coercive apparatuses of modern empires to understand how colonial states asserted sovereignty and managed subject populations. | [Jürgen Osterhammel, *Colonialism: A Theoretical Overview*](https://archive.org/details/colonialismahis0000oste)<br>- Frederick Cooper and Ann Laura Stoler (eds.), *Tensions of Empire: Colonial Cultures in a Bourgeois World* |
+| Anticolonial Liberation and Third World Nationalism | Explores the revolutionary ideologies, armed liberation movements, and national consciousness that dismantled European global hegemony in the 20th century. | [Frantz Fanon, *The Wretched of the Earth*](https://archive.org/details/wretchedearth0000fano)<br>- [Benedict Anderson, *Imagined Communities: Reflections on the Origin and Spread of Nationalism*](https://archive.org/details/imaginedcommunit0000ande) |
+| Subaltern Studies and Postcolonial Epistemology | Interrogates how colonial archives produce epistemological silences and evaluates theoretical frameworks aimed at decentering Eurocentric historical narratives. | [Edward W. Said, *Orientalism*](https://archive.org/details/orientalism0000said)<br>- [Dipesh Chakrabarty, *Provincializing Europe: Postcolonial Thought and Historical Difference*](https://archive.org/details/provincializinge0000chak) |
 
-### Asia
+## Totalitarianism, Mass Violence, and Modern Warfare
 
-| Subject | Book | Online Course |
+| Topic | Why Study | Resources |
 | --- | --- | --- |
-| Modern East & South Asia | [Prasenjit Duara et al., *A Companion to Global Historical Thought* (Asia sections)](https://www.wiley.com/en-us/A+Companion+to+Global+Historical+Thought-p-9781118525364) (publisher preview/info; limited free access) | [LSE: *The Making of the Modern World*](https://www.lse.ac.uk/international-history/research/the-making-of-the-modern-world) (related resources) |
+| The Anatomy of Totalitarian Regimes | Investigates the ideological foundations, mass mobilization techniques, and state terror mechanisms of 20th-century totalitarian dictatorships. | [Hannah Arendt, *The Origins of Totalitarianism*](https://archive.org/details/originsoftotalit0000aren)<br>- Karl Dietrich Bracher, *The German Dictatorship: The Origins, Structure, and Effects of National Socialism* |
+| Comparative Mass Violence and Genocide | Compares systemic civilian destruction, ethnic cleansing, and the Holocaust to analyze the spatial, ideological, and logistical dynamics of state-sponsored extermination. | [Timothy Snyder, *Bloodlands: Europe Between Hitler and Stalin*](https://archive.org/details/bloodlandseurope0000snyd)<br>- Raul Hilberg, *The Destruction of the European Jews* |
+| Total War, Strategic Intelligence, and Nuclear Geopolitics | Analyzes the mobilization of industrial economies for total warfare, military strategy, and the covert intelligence operations that defined modern international conflict. | Gerhard L. Weinberg, *A World at Arms: A Global History of World War II*<br>- [Odd Arne Westad, *The Global Cold War: Third World Interventions and the Making of Our Times*](https://archive.org/details/globalcoldwarthi0000west) |
 
-### Africa
+## Global Capitalism, Commodity Chains, and Environmental History
 
-| Subject | Book | Online Course |
+| Topic | Why Study | Resources |
 | --- | --- | --- |
-| Modern Africa | [Frederick Cooper, *Africa in the World* (open essays)](https://www.hup.harvard.edu/books/9780674284364) (Harvard UP preview/open access excerpts) | |
+| The Great Divergence and Uneven Development | Examines why Western Europe and East Asia diverged in industrial capacity and capital accumulation during the 18th and 19th centuries despite comparable initial conditions. | [Kenneth Pomeranz, *The Great Divergence: China, Europe, and the Making of the Modern World Economy*](https://archive.org/details/greatdivergence0000unse)<br>- Robert C. Allen, *The British Industrial Revolution in Global Perspective* |
+| Global Commodity Chains and War Capitalism | Traces how individual agricultural and mineral commodities, coercive labor regimes, and maritime networks structured globalized market economies. | [Sven Beckert, *Empire of Cotton: A Global History*](https://archive.org/details/empireofcottongl0000beck)<br>- Sidney W. Mintz, *Sweetness and Power: The Place of Sugar in Modern History* |
+| The Anthropocene and Planetary Environmental History | Evaluates the historical impact of fossil energy regimes, industrial agriculture, and resource extraction on planetary ecological stability over the last two centuries. | [J. R. McNeill, *Something New Under the Sun: An Environmental History of the Twentieth-Century World*](https://archive.org/details/somethingnewunde0000mcne)<br>- Dipesh Chakrabarty, *The Climate of History in a Planetary Age* |
 
-### Latin America
+## Social, Cultural, and Intellectual History
 
-| Subject | Book | Online Course |
+| Topic | Why Study | Resources |
 | --- | --- | --- |
-| Modern Latin America | [John Charles Chasteen, *Born in Blood and Fire* (Archive.org)](https://archive.org/details/borninbloodfirec0000chas) | [MIT OCW: *Modern Latin America*](https://ocw.mit.edu/courses/21h-112-the-american-revolution-fall-2004/) (related; note: specific course may vary – use for contextual modern history) |
+| Labor History and Working-Class Formation | Examines how working populations formulated class consciousness, organized mutual aid, and created autonomous political cultures in response to industrial capitalism. | [E. P. Thompson, *The Making of the English Working Class*](https://archive.org/details/makingofenglishw0000thom)<br>- Gareth Stedman Jones, *Languages of Class: Studies in English Working Class History 1832–1982* |
+| Microhistory and Everyday Mentalities | Reconstructs the mental frameworks, religious heterodoxies, and agency of ordinary historical figures through deep archival analysis of localized records. | [Carlo Ginzburg, *The Cheese and the Worms: The Cosmos of a Sixteenth-Century Miller*](https://archive.org/details/cheeseworms00ginz)<br>- Natalie Zemon Davis, *The Return of Martin Guerre* |
+| Discipline, Biopolitics, and Institutional Modernity | Analyzes the emergence of surveillance, clinical classification, and penal institutions that produce modern subjectivities and social control. | [Michel Foucault, *Discipline and Punish: The Birth of the Prison*](https://archive.org/details/disciplinepunish0000fouc)<br>- Paul Rabinow (ed.), *The Foucault Reader* |
+| Gender, Race, and Social Hierarchy | Interrogates how racialized categories and patriarchal structures were codified and challenged across modern political and cultural institutions. | [Simone de Beauvoir, *The Second Sex*](https://archive.org/details/secondsex0000beau)<br>- [W. E. B. Du Bois, *The Souls of Black Folk*](https://archive.org/details/soulsofblackfolk0000dubo) |
 
-### United States
+## Advanced Methodologies, Spatial History, and Digital Humanities
 
-| Subject | Book | Online Course |
+| Topic | Why Study | Resources |
 | --- | --- | --- |
-| U.S. in Global Context | [Irwin Unger, *These United States*](https://openlibrary.org/books/OL221332M/These_United_States) (Open Library preview) | [Yale HIST 116: The American Revolution](https://oyc.yale.edu/history/hist-116) (closely related global context) |
-
-## Thematic and Analytical Modern History
-
-### Empire, Colonialism, Decolonization
-
-| Subject | Book | Online Course |
-| --- | --- | --- |
-| Imperialism | [Jürgen Osterhammel, *Colonialism* (Archive.org)](https://archive.org/details/colonialismahis0000oste) | |
-| Decolonization | [Frantz Fanon, *The Wretched of the Earth*](https://archive.org/details/wretchedearth0000fano) | |
-
-### War, Revolution, Ideology
-
-| Subject | Book | Online Course |
-| --- | --- | --- |
-| Modern Revolutions | [Eric Hobsbawm, *The Age of Revolution*](https://archive.org/details/ageofrevolutione0000hobs) | |
-| World Wars | [Gerhard Weinberg, *A World at Arms*](https://www.cambridge.org/core/books/world-at-arms/0A1B1B1B1B1B1B1B1B1B1B1B) (publisher preview) | [Yale HIST 210: The Early Middle Ages?](https://oyc.yale.edu/history/hist-210) (note: closest match; World Wars coverage varies) |
-| Cold War | [Westad, *The Global Cold War*](https://archive.org/details/globalcoldwarthi0000west) | |
-
-### Society and Culture
-
-| Subject | Book | Online Course |
-| --- | --- | --- |
-| Gender History | [Simone de Beauvoir, *The Second Sex* (contextual reading)](https://archive.org/details/secondsex0000beau) | |
-| Race and Class | [W.E.B. Du Bois, *The Souls of Black Folk*](https://archive.org/details/soulsofblackfolk0000dubo) | |
-| Cultural Modernity | [Marshall Berman, *All That Is Solid Melts into Air*](https://archive.org/details/allthatissolidme0000berm) | |
-
-### Economy and Environment
-
-| Subject | Book | Online Course |
-| --- | --- | --- |
-| Capitalism & Industrialization | [Hobsbawm, *The Age of Capital*](https://archive.org/details/ageofcapital18480000hobs) | |
-| Global Inequality | [Branko Milanovic, *Global Inequality*](https://www.hup.harvard.edu/books/9780674737136) (Harvard UP preview) | |
-| Environmental History | [J.R. McNeill, *Something New Under the Sun*](https://wwnorton.com/books/9780393319408) (publisher info/preview) | |
+| Spatial History and Historical GIS | Equips historians with spatial modeling tools, geographic information systems, and cartographic visualization to analyze geographic dynamics across historical time. | Anne Kelly Knowles (ed.), *Past Time, Past Place: GIS for History*<br>- David J. Bodenhamer, John Corrigan, and Trevor M. Harris (eds.), *The Spatial Humanities: GIS and the Future of Humanities Scholarship* |
+| Oral History and Memory Studies | Teaches the methodological rigor, ethical standards, and narrative analysis needed to collect and evaluate oral testimonies as historical evidence. | Paul Thompson and Joanna Bornat, *The Voice of the Past: Oral History*<br>- Alessandro Portelli, *The Death of Luigi Trastulli and Other Stories: Form and Meaning in Oral History* |
+| Digital Archives and Computational Text Analysis | Teaches computational methods for mining digitized corpora, conducting network analysis, and building enduring digital history repositories. | [Daniel J. Cohen and Roy Rosenzweig, *Digital History: A Guide to Gathering, Preserving, and Presenting the Past on the Web*](http://chnm.gmu.edu/digitalhistory/)<br>- [The Programming Historian (Peer-reviewed Computational Tutorials)](https://programminghistorian.org/) |
