@@ -2,48 +2,50 @@
 
 A curated directory of concrete, actionable project walkthroughs, step-by-step methodological workflows, open templates, and research guides for learning Modern History through hands-on practice.
 
-## Historiographical Synthesis & Research Writing
+## Write an Archival Research Paper
 
-- [A Brief Guide to Writing the History Paper – Harvard Writing Program](https://writingprogram.fas.harvard.edu/)
-- [Steps for Writing a History Paper – UCLA Department of History](https://history.ucla.edu/)
-- [Seven Steps to Writing Historiography – University of Guelph Library](https://guides.lib.uoguelph.ca/)
-- [How to Create a Historiographical Essay – URI Libraries](https://uri.libguides.com/)
-- [The Process of Writing History – Contingent Magazine](https://contingentmagazine.org/2020/05/19/process-writing-history)
-- [Writing Microhistory: To See the World in a Grain of Sand – The Many-Headed Monster](https://manyheadedmonster.com/)
+- [A Brief Guide to Writing the History Paper (Harvard College Writing Center)](https://writingproject.fas.harvard.edu/files/hwp/files/bg_writing_history.pdf)
+- [Reading, Writing, and Researching for History: A Guide for College Students by Patrick Rael (Bowdoin College)](https://courses.bowdoin.edu/writing-guides/)
+- [Steps for Writing a History Paper (UCLA Department of History)](https://history.ucla.edu/steps-for-writing-a-history-paper/)
+- [How to Write a History Research Paper (Carleton College Department of History)](https://www.carleton.edu/history/resources/history-study-guides/writing/)
 
-## Archival Research & Documentary Editing
+## Compose a Historiographical Review Essay
 
-- [Getting Started with Primary Sources & Analysis Tool – Library of Congress](https://www.loc.gov/programs/teachers/getting-started-with-primary-sources/)
-- [Finding and Analyzing Primary Sources – US National Archives](https://www.archives.gov/education/research)
-- [Guidelines for Preparing Historical Documents and Documentary Editions – OIEAHC](https://oieahc.wm.edu/publications/wmq/submitting-manuscript/guidelines-for-preparing-historical-documents/)
-- [DocsTeach Historical Document Analysis Worksheets – National Archives](https://www.archives.gov/education/lessons/worksheets)
+- [Seven Steps to Writing Historiography (University of Guelph Library)](https://guides.lib.uoguelph.ca/c.php?g=725675&p=5198838)
+- [How to Create a Historiography: Step-By-Step Creation (University of Rhode Island Libraries)](https://uri.libguides.com/historiography/creation)
+- [Historiographical Essays: Analyzing Interpretations and Arguments (Agnes Scott College)](https://www.agnesscott.edu/writingcenter/handouts/historiographical-essays.html)
 
-## Oral History & Qualitative Fieldwork
+## Conduct an Oral History Project
 
-- [Oral History Principles and Best Practices – Oral History Association](https://oralhistory.org/best-practices/)
-- [Step-by-Step Guide to Oral History – Judith Moyer / DoHistory](https://dohistory.org/on_your_own/toolkit/oralHistory.html)
-- [How to Do Oral History: Planning, Interviewing, and Archiving – Smithsonian Institution Archives](https://siarchives.si.edu/)
-- [Oral History in the Digital Age: Best Practices and Workflows – Matrix / MSU](http://ohda.matrix.msu.edu/)
+- [Step-by-Step Guide to Oral History by Judith Moyer (DoHistory)](https://dohistory.org/on_your_own/toolkit/oralHistory.html)
+- [Principles and Best Practices for Oral History (Oral History Association)](https://oralhistory.org/best-practices/)
+- [How to Do Oral History (Smithsonian Institution Archives)](https://siarchives.si.edu/history/how-do-oral-history)
 
-## Spatial History & Historical GIS
+## Compile a Documentary Edition of Historical Sources
 
-- [Installing QGIS and Adding Spatial Layers – Programming Historian](https://programminghistorian.org/en/lessons/qgis-layers)
-- [Georeferencing Historical Maps in QGIS – Programming Historian](https://programminghistorian.org/en/lessons/georeferencing-qgis)
-- [Geocoding Historical Placename Data using QGIS – Programming Historian](https://programminghistorian.org/en/lessons/geocoding-qgis)
-- [Displaying a Georeferenced Map in KnightLab's StoryMap JS – Programming Historian](https://programminghistorian.org/en/lessons/storymap-js)
-- [Intro to Google Maps and Google Earth for Historical Visualization – Programming Historian](https://programminghistorian.org/en/lessons/google-maps-google-earth)
+- [Guidelines for Preparing Historical Documents (Omohundro Institute of Early American History & Culture / William & Mary Quarterly)](https://oieahc.wm.edu/publications/wmq/submitting-manuscript/guidelines-for-preparing-historical-documents/)
+- [A Guide to Documentary Editing by Mary-Jo Kline and Susan Holbrook Perdue (Association for Documentary Editing / University of Virginia Press)](https://gde.upress.virginia.edu/)
 
-## Computational Text Analysis & Historical Networks
+## Build an Interactive Historical Map with GIS
 
-- [Corpus Analysis with Voyant Tools – Programming Historian](https://programminghistorian.org/en/lessons/corpus-analysis-with-voyant-tools)
-- [Corpus Analysis and Keyword Extraction with AntConc – Programming Historian](https://programminghistorian.org/en/lessons/corpus-analysis-with-antconc)
-- [Getting Started with Topic Modeling and MALLET – Programming Historian](https://programminghistorian.org/en/lessons/topic-modeling-and-mallet)
-- [Exploring and Analyzing Historical Network Data with Python – Programming Historian](https://programminghistorian.org/en/lessons/exploring-and-analyzing-network-data-with-python)
-- [Temporal Network Analysis with R – Programming Historian](https://programminghistorian.org/en/lessons/temporal-network-analysis-with-r)
+- [Georeferencing in QGIS 2.0 (The Programming Historian)](https://programminghistorian.org/en/lessons/georeferencing-qgis)
+- [Geocoding Historical Data Using QGIS (The Programming Historian)](https://programminghistorian.org/en/lessons/geocoding-qgis)
+- [Displaying a Georeferenced Map in KnightLab StoryMap JS (The Programming Historian)](https://programminghistorian.org/en/lessons/displaying-georeferenced-map-knightlab-storymap-js)
+- [Intro to Google Maps and Google Earth for Historians (The Programming Historian)](https://programminghistorian.org/en/lessons/googlemaps-googleearth)
 
-## Public History, Digital Exhibits & Curation
+## Curate a Digital Archive or Online Exhibit
 
-- [Up and Running with Omeka.net: Building Digital Collections – Programming Historian](https://programminghistorian.org/en/lessons/up-and-running-with-omekanet)
-- [Creating an Omeka Exhibit: Curating Guided Digital Tours – Programming Historian](https://programminghistorian.org/en/lessons/creating-an-omeka-exhibit)
-- [Building a Static History Website with Jekyll and GitHub Pages – Programming Historian](https://programminghistorian.org/en/lessons/building-static-sites-with-jekyll-github-pages)
-- [Analyzing and Creating Memorials and Commemoration Projects – Facing History and Ourselves](https://facinghistory.org/resource-library/analyzing-creating-memorials)
+- [Up and Running with Omeka.net (The Programming Historian)](https://programminghistorian.org/en/lessons/up-and-running-with-omeka)
+- [Creating an Omeka Exhibit (The Programming Historian)](https://programminghistorian.org/en/lessons/creating-an-omeka-exhibit)
+- [Creating a Primary Source Archive: All History Is Local (Library of Congress Classroom Materials)](https://www.loc.gov/classroom-materials/creating-a-primary-source-archive-all-history-is-local/)
+- [Personal Digital Archive Toolkit (National and State Libraries Australasia)](https://www.nsla.org.au/resources/personal-digital-archive-toolkit/)
+
+## Craft a Microhistory or Biographical Study
+
+- [To See the World in a Grain of Sand: Reading and Writing Microhistories by Dr. Brodie Waddell (The Many-Headed Monster)](https://manyheadedmonster.com/wp-content/uploads/2020/07/waddell-microhistories-handbook-2019-20-mhm.pdf)
+- [How Do You Write A Biography? by Narayani Basu (Contingent Magazine)](https://contingentmagazine.org/2020/05/21/how-do-you-write-a-biography/)
+
+## Audit a Public Monument or Commemoration Project
+
+- [Analyzing and Creating Memorials (Facing History & Ourselves)](https://www.facinghistory.org/resource-library/analyzing-creating-memorials)
+- [After Charlottesville: Public Memory and the Contested Meaning of Monuments (Facing History & Ourselves)](https://www.facinghistory.org/resource-library/after-charlottesville-public-memory-contested-meaning-monuments)
