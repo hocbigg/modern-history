@@ -3,17 +3,28 @@ title: Hocbigg - Modern History
 description: Path to a free self-taught education in Modern History!
 ---
 
+## Introduction
 
-# Introduction
+Modern history investigates the profound structural, political, and cultural transformations that reshaped human societies between the mid-eighteenth century and the present day. Rather than treating the past as a dry catalog of dates and rulers, historical study explores the root causes and consequences of major ruptures: the rise of industrial capitalism, democratic revolutions, imperial expansion and anticolonial resistance, total warfare, ideological polarization, and contemporary globalization. Studying modern history develops critical habits of mind — source criticism, contextual empathy, and causal analysis — that allow you to understand how our interconnected, fragile global order was constructed.
 
-The Modern History curriculum is a **complete education in Modern History** (primarily from c. 1750 to the present) using online materials.
+This curriculum is designed for self-directed learners seeking a thorough, undergraduate-level foundation in modern history. No prior formal background in history or historical research is assumed. The sequence begins with the core mechanics of historical thinking and evidence evaluation before guiding you chronologically through the modern era.
 
+### How to Navigate the Sequence
 
+Because historical phenomena are deeply cumulative, you should work through the four subjects in order:
 
+- **Start with Method and Historiography:** Begin with *Historical Method and Historiography*. Learning how historians evaluate primary sources, identify bias, and navigate competing interpretations ensures that you read subsequent historical accounts as evidence-based arguments rather than unquestioned facts.
+- **Follow the Chronological Spine:** Proceed sequentially through *The Long Nineteenth Century*, *The Twentieth Century*, and *Contemporary History and Globalization*. The global rivalries, industrial economies, and imperial structures forged in the nineteenth century directly set the stage for the total wars and ideological conflicts of the twentieth century, which in turn established the institutions, borders, and geopolitical fractures of the post-1991 world.
 
-**[How to contribute](/CONTRIBUTING.html)**
+### Beyond the Core
 
-# Communities
+This curriculum covers only the foundational baseline that every student of modern history should master. Once you have completed these core subjects, you can branch out into specialized areas of inquiry using the companion guides in this series:
+
+- Explore dedicated subfields — such as subaltern studies, comparative mass violence, commodity chains, and historical GIS — in [Advanced Topics](advanced_topics.md).
+- Deepen your engagement with field-defining monographs and landmark essays in [Readings](extras/readings.md).
+- Explore focused university lecture series and audiovisual deep dives in [Courses](extras/courses.md).
+
+### Communities
 
 - Forums:
     - [Historum](https://historum.com/)
@@ -28,9 +39,9 @@ The Modern History curriculum is a **complete education in Modern History** (pri
     - [r/HistoryWhatIf](https://www.reddit.com/r/HistoryWhatIf/)
 - You can also interact through [GitHub issues](https://github.com/hocbigg/modern-history/issues). If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more [here](/CONTRIBUTING.html).
 
-# Modern History Core Curriculum
+## Curriculum
 
-## Historical Method and Historiography
+### Historical Method and Historiography
 
 This subject introduces the foundational principles of historical inquiry, source criticism, evidence evaluation, and the major historiographical debates that govern how historians interpret the past.
 
@@ -42,7 +53,7 @@ This subject introduces the foundational principles of historical inquiry, sourc
 
 [The Historian's Craft by Marc Bloch (Vintage)](https://books.google.com/books?isbn=9780394705125) - A classic alternative to Carr, offering a humanist defense of history that emphasizes observation, causation, and empathy from the Annales school perspective.
 
-## The Long Nineteenth Century and Global Modernity (c. 1750–1914)
+### The Long Nineteenth Century and Global Modernity (c. 1750–1914)
 
 This subject examines the global emergence of modernity through the dual industrial and political revolutions, the consolidation of modern nation-states, and European imperial expansion.
 
@@ -54,9 +65,9 @@ This subject examines the global emergence of modernity through the dual industr
 
 [The Birth of the Modern World, 1780–1914: Global Connections and Comparisons by C. A. Bayly (Wiley-Blackwell)](https://books.google.com/books?isbn=9780631236160) - The primary advanced monograph to read after establishing your textbook foundation, demonstrating how imperial expansion, state formation, and religious revivals unfolded concurrently across Asia, Africa, and the Atlantic world.
 
-[The Age of Revolution: 1789–1848 by Eric Hobsbawm (Vintage)](https://books.google.com/books?isbn=9780679772538) - An alternative European-focused synthesis to Bayly, interpreting early modernity through the concept of the "dual revolution"—the British economic transformation and the French political rupture.
+[The Age of Revolution: 1789–1848 by Eric Hobsbawm (Vintage)](https://books.google.com/books?isbn=9780679772538) - An alternative European-focused synthesis to Bayly, interpreting early modernity through the concept of the "dual revolution" — the British economic transformation and the French political rupture.
 
-## The Twentieth Century: Total War, Ideological Conflict, and the Cold War (1914–1991)
+### The Twentieth Century: Total War, Ideological Conflict, and the Cold War (1914–1991)
 
 This subject covers the systemic crises of the short twentieth century, including two world wars, the struggle between democratic and totalitarian regimes, global decolonization, and the Cold War.
 
@@ -72,7 +83,7 @@ This subject covers the systemic crises of the short twentieth century, includin
 
 [The Global Cold War: Third World Interventions and the Making of Our Times by Odd Arne Westad (Cambridge University Press)](https://books.google.com/books?isbn=9780521703147) - A complementary monograph to Hobsbawm, specifically correcting Eurocentric accounts by examining how superpower rivalry intersected with revolutionary politics and nation-building across the Global South.
 
-## Contemporary History and Globalization (c. 1990–Present)
+### Contemporary History and Globalization (c. 1990–Present)
 
 This subject surveys the post-Cold War international order, focusing on the collapse of the Soviet Union, European integration, accelerating globalization, and emerging geopolitical multipolarity.
 
