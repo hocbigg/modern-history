@@ -1,262 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Advanced Topics</title>
-<link rel="stylesheet" href="/modern-history/style.css">
-<meta name="description" content="">
+  <title>Advanced Topics</title>
+  <meta name="description" content="Advanced Topics curriculum by hocbigg.">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/modern-history/">
+  <link rel="canonical" href="https://hocbigg.github.io/modern-history/advanced_topics.html">
+  <meta property="og:title" content="Advanced Topics">
+  <meta property="og:description" content="Advanced Topics curriculum by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/modern-history/advanced_topics.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Advanced Topics">
-<meta property="og:description" content="">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/modern-history/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/modern-history/">Modern-History</a>
-<a href="/modern-history/advanced_topics.html">Advanced Topics</a>
-<a href="/modern-history/projects.html">Projects</a>
-<a href="/modern-history/extras/courses.html">Extra Courses</a>
-<a href="/modern-history/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/modern-history/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/modern-history/">Modern History</a></li>
+      <li><a href="/modern-history/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/modern-history/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/modern-history/extras/courses.html">Extra Courses</a></li>
+      <li><a href="https://github.com/hocbigg/modern-history" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <article>
 
 <h1 id="advanced-topics">Advanced Topics</h1>
+<p>Learners are encouraged to select one or two tracks aligned with their interests rather than attempting to complete all tracks.</p>
 <ul>
-<li><a href="#regional-modern-histories">Regional Modern Histories</a><ul>
-<li><a href="#europe">Europe</a></li>
-<li><a href="#asia">Asia</a></li>
-<li><a href="#africa">Africa</a></li>
-<li><a href="#latin-america">Latin America</a></li>
-<li><a href="#united-states">United States</a></li>
+<li><a href="#global-imperialism-decolonization-and-subaltern-studies">Global Imperialism, Decolonization, and Subaltern Studies</a> - Investigates the mechanics of imperial governance, anticolonial revolutions, and postcolonial theoretical critiques that decentered Eurocentric historical narratives.</li>
+<li><a href="#totalitarianism-mass-violence-and-modern-warfare">Totalitarianism, Mass Violence, and Modern Warfare</a> - Explores the ideological roots of totalitarian regimes, comparative genocide, industrial total war, and the spatial dynamics of state-sponsored extermination.</li>
+<li><a href="#global-capitalism-commodity-chains-and-environmental-history">Global Capitalism, Commodity Chains, and Environmental History</a> - Examines the material drivers of modern development, cross-continental commodity circuits, the Great Divergence, and the ecological shifts of the Anthropocene.</li>
+<li><a href="#social-cultural-and-intellectual-history">Social, Cultural, and Intellectual History</a> - Analyzes the historical evolution of class consciousness, microhistorical mentalities, institutional biopolitics, and gender as an analytical category.</li>
+<li><a href="#spatial-history-memory-studies-and-digital-humanities">Spatial History, Memory Studies, and Digital Humanities</a> - Equips independent historians with geographic information systems (GIS), oral history methodologies, and computational text-analysis workflows for modern historical research.</li>
 </ul>
-</li>
-<li>
-<p><a href="#thematic-and-analytical-modern-history">Thematic and Analytical Modern History</a></p>
-<ul>
-<li><a href="#empire-colonialism-decolonization">Empire, Colonialism, Decolonization</a></li>
-<li><a href="#war-revolution-ideology">War, Revolution, Ideology</a></li>
-<li><a href="#society-and-culture">Society and Culture</a></li>
-<li><a href="#economy-and-environment">Economy and Environment</a></li>
-</ul>
-</li>
-<li>
-<p><strong>Regional Modern Histories</strong><br />
-  This track contains separate modules for Europe, Asia, Africa, Latin America, and the United States.<br />
-  You do <strong>not</strong> need to study every region. Pick <strong>1–3</strong> regions that interest you most (or that seem most relevant to your goals — for example, the history of your own region, regions connected to current events, or areas you want to understand better).</p>
-</li>
-<li>
-<p><strong>Thematic and Analytical Modern History</strong><br />
-  This track contains focused modules on major forces that shaped the modern world: empire &amp; colonialism, war &amp; revolution, society &amp; culture, economy &amp; environment.<br />
-  Again, you do <strong>not</strong> need to read every theme. Choose <strong>2–4</strong> themes that excite you or help you make sense of the topics you care about.</p>
-</li>
-</ul>
-<p>You can move back and forth between regional and thematic sections as needed — they reinforce each other. For example, reading about colonialism (Section IV) becomes much clearer after you have studied modern Africa or Asia (Section III).</p>
-<h2 id="regional-modern-histories">Regional Modern Histories</h2>
-<h3 id="europe">Europe</h3>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Book</th>
-<th>Online Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Modern Europe</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/ageofempire18751914hobs">Eric Hobsbawm, <em>The Age of Empire</em></a> (related in series)</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://oyc.yale.edu/history/hist-202">Yale HIST 202: European Civilization, 1648-1945</a></td>
-</tr>
-</tbody>
-</table>
-<h3 id="asia">Asia</h3>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Book</th>
-<th>Online Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Modern East &amp; South Asia</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.wiley.com/en-us/A+Companion+to+Global+Historical+Thought-p-9781118525364">Prasenjit Duara et al., <em>A Companion to Global Historical Thought</em> (Asia sections)</a> (publisher preview/info; limited free access)</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.lse.ac.uk/international-history/research/the-making-of-the-modern-world">LSE: <em>The Making of the Modern World</em></a> (related resources)</td>
-</tr>
-</tbody>
-</table>
-<h3 id="africa">Africa</h3>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Book</th>
-<th>Online Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Modern Africa</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.hup.harvard.edu/books/9780674284364">Frederick Cooper, <em>Africa in the World</em> (open essays)</a> (Harvard UP preview/open access excerpts)</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h3 id="latin-america">Latin America</h3>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Book</th>
-<th>Online Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Modern Latin America</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/borninbloodfirec0000chas">John Charles Chasteen, <em>Born in Blood and Fire</em> (Archive.org)</a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://ocw.mit.edu/courses/21h-112-the-american-revolution-fall-2004/">MIT OCW: <em>Modern Latin America</em></a> (related; note: specific course may vary – use for contextual modern history)</td>
-</tr>
-</tbody>
-</table>
-<h3 id="united-states">United States</h3>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Book</th>
-<th>Online Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>U.S. in Global Context</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://openlibrary.org/books/OL221332M/These_United_States">Irwin Unger, <em>These United States</em></a> (Open Library preview)</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://oyc.yale.edu/history/hist-116">Yale HIST 116: The American Revolution</a> (closely related global context)</td>
-</tr>
-</tbody>
-</table>
-<h2 id="thematic-and-analytical-modern-history">Thematic and Analytical Modern History</h2>
-<h3 id="empire-colonialism-decolonization">Empire, Colonialism, Decolonization</h3>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Book</th>
-<th>Online Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Imperialism</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/colonialismahis0000oste">Jürgen Osterhammel, <em>Colonialism</em> (Archive.org)</a></td>
-<td></td>
-</tr>
-<tr>
-<td>Decolonization</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/wretchedearth0000fano">Frantz Fanon, <em>The Wretched of the Earth</em></a></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h3 id="war-revolution-ideology">War, Revolution, Ideology</h3>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Book</th>
-<th>Online Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Modern Revolutions</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/ageofrevolutione0000hobs">Eric Hobsbawm, <em>The Age of Revolution</em></a></td>
-<td></td>
-</tr>
-<tr>
-<td>World Wars</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.cambridge.org/core/books/world-at-arms/0A1B1B1B1B1B1B1B1B1B1B1B">Gerhard Weinberg, <em>A World at Arms</em></a> (publisher preview)</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://oyc.yale.edu/history/hist-210">Yale HIST 210: The Early Middle Ages?</a> (note: closest match; World Wars coverage varies)</td>
-</tr>
-<tr>
-<td>Cold War</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/globalcoldwarthi0000west">Westad, <em>The Global Cold War</em></a></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h3 id="society-and-culture">Society and Culture</h3>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Book</th>
-<th>Online Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Gender History</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/secondsex0000beau">Simone de Beauvoir, <em>The Second Sex</em> (contextual reading)</a></td>
-<td></td>
-</tr>
-<tr>
-<td>Race and Class</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/soulsofblackfolk0000dubo">W.E.B. Du Bois, <em>The Souls of Black Folk</em></a></td>
-<td></td>
-</tr>
-<tr>
-<td>Cultural Modernity</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/allthatissolidme0000berm">Marshall Berman, <em>All That Is Solid Melts into Air</em></a></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h3 id="economy-and-environment">Economy and Environment</h3>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Book</th>
-<th>Online Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Capitalism &amp; Industrialization</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/ageofcapital18480000hobs">Hobsbawm, <em>The Age of Capital</em></a></td>
-<td></td>
-</tr>
-<tr>
-<td>Global Inequality</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.hup.harvard.edu/books/9780674737136">Branko Milanovic, <em>Global Inequality</em></a> (Harvard UP preview)</td>
-<td></td>
-</tr>
-<tr>
-<td>Environmental History</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://wwnorton.com/books/9780393319408">J.R. McNeill, <em>Something New Under the Sun</em></a> (publisher info/preview)</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-</article>
-</main>
+<h2 id="global-imperialism-decolonization-and-subaltern-studies">Global Imperialism, Decolonization, and Subaltern Studies</h2>
+<p>This track examines how modern European empires established coercive hegemony, how colonized populations theorized and executed national liberation, and how postcolonial scholars dismantled Eurocentric historical epistemologies.</p>
+<p>Colonial Formations and Imperial Governance: <a href="https://books.google.com/books?isbn=9780520205406" target="_blank" rel="noopener noreferrer">Tensions of Empire: Colonial Cultures in a Bourgeois World edited by Frederick Cooper and Ann Laura Stoler (University of California Press)</a> - Explores the contested boundaries between metropole and colony, revealing how imperial rule shaped European domestic culture, racial hierarchies, and legal apparatuses.</p>
+<p>Nationalism and the Anti-Colonial Imagination: <a href="https://books.google.com/books?isbn=9781784786755" target="_blank" rel="noopener noreferrer">Imagined Communities: Reflections on the Origin and Spread of Nationalism by Benedict Anderson (Verso)</a> - The canonical analysis of how print-capitalism, administrative pilgrimages, and vernacular languages constructed modern national consciousness worldwide.</p>
+<p>Revolutionary Decolonization and Third World Liberation: <a href="https://books.google.com/books?isbn=9780802141323" target="_blank" rel="noopener noreferrer">The Wretched of the Earth by Frantz Fanon (Grove Press)</a> - The foundational psychological and political critique of colonial violence, armed national liberation, and the post-independence perils of bourgeois nationalism.</p>
+<p>Subaltern Studies and Postcolonial Historiography: <a href="https://books.google.com/books?isbn=9780691130019" target="_blank" rel="noopener noreferrer">Provincializing Europe: Postcolonial Thought and Historical Difference by Dipesh Chakrabarty (Princeton University Press)</a> - Demonstrates how postcolonial theory decenters universalized European historical categories and reclaims non-Western life-worlds from historicist marginalization.</p>
+<h2 id="totalitarianism-mass-violence-and-modern-warfare">Totalitarianism, Mass Violence, and Modern Warfare</h2>
+<p>This track investigates the structural, ideological, and military mechanisms that enabled extreme state violence, industrial total war, and systemic genocides during the twentieth century.</p>
+<p>Totalitarian Ideology and State Terror: <a href="https://books.google.com/books?isbn=9780156701532" target="_blank" rel="noopener noreferrer">The Origins of Totalitarianism by Hannah Arendt (Harcourt)</a> - The definitive theoretical critique tracing the transformation of European antisemitism, imperial expansion, and mass atomization into Nazi and Stalinist totalitarianism.</p>
+<p>Bureaucracy and Mass Extermination: <a href="https://books.google.com/books?isbn=9780300095579" target="_blank" rel="noopener noreferrer">The Destruction of the European Jews by Raul Hilberg (Yale University Press)</a> - The monumental foundational study analyzing the administrative machinery, logistics, and multi-institutional complicity that carried out the Holocaust.</p>
+<p>Comparative Mass Violence and Imperial Borderlands: <a href="https://books.google.com/books?isbn=9780465031474" target="_blank" rel="noopener noreferrer">Bloodlands: Europe Between Hitler and Stalin by Timothy Snyder (Basic Books)</a> - Provides a unified regional framework for analyzing Soviet and Nazi murderous policies across Poland, Ukraine, Belarus, and the Baltic rim.</p>
+<p>Comparative Mass Violence and Imperial Borderlands: <a href="https://www.youtube.com/playlist?list=PLh9mgdi4rNewfxO7LhBoz_1Mx1MaO6sw_" target="_blank" rel="noopener noreferrer">The Making of Modern Ukraine (Yale University / Timothy Snyder)</a> - A comprehensive university lecture series examining how imperial expansion, state-induced famines, and world wars intersected in Eastern Europe.</p>
+<p>Global Total War and Military Coalition Strategy: <a href="https://books.google.com/books?isbn=9780521618267" target="_blank" rel="noopener noreferrer">A World at Arms: A Global History of World War II by Gerhard L. Weinberg (Cambridge University Press)</a> - An authoritative, worldwide strategic history examining the simultaneous operational, economic, and diplomatic dimensions of the second global war.</p>
+<h2 id="global-capitalism-commodity-chains-and-environmental-history">Global Capitalism, Commodity Chains, and Environmental History</h2>
+<p>This track investigates the material underpinnings of the modern world system, including resource extraction networks, uneven industrialization, commodity circuits, and human transformations of the biosphere.</p>
+<p>The Great Divergence and Global Industrialization: <a href="https://books.google.com/books?isbn=9780691217185" target="_blank" rel="noopener noreferrer">The Great Divergence: China, Europe, and the Making of the Modern World Economy by Kenneth Pomeranz (Princeton University Press)</a> - Uses rigorous comparative regional data to argue that European industrial primacy resulted from accessible coal deposits and New World colonial ghost acreage rather than internal cultural superiority.</p>
+<p>Global Commodity Frontiers and War Capitalism: <a href="https://books.google.com/books?isbn=9780375713965" target="_blank" rel="noopener noreferrer">Empire of Cotton: A Global History by Sven Beckert (Vintage)</a> - Traces how imperial coercion, chattel slavery, and global trade networks forged modern industrial capitalism around the production and manufacturing of raw cotton.</p>
+<p>Plantations, Monoculture, and Industrial Diets: <a href="https://books.google.com/books?isbn=9780140092332" target="_blank" rel="noopener noreferrer">Sweetness and Power: The Place of Sugar in Modern History by Sidney W. Mintz (Penguin Books)</a> - A landmark anthropological history illustrating how Caribbean slave plantations supplied cheap caloric fuel to the British industrial working class.</p>
+<p>The Anthropocene and Planetary Environmental History: <a href="https://books.google.com/books?isbn=9780393321838" target="_blank" rel="noopener noreferrer">Something New Under the Sun: An Environmental History of the Twentieth-Century World by J. R. McNeill (W. W. Norton &amp; Company)</a> - The defining synthesis of twentieth-century environmental transformations, quantifying the global impact of fossil fuel regimes, industrial agriculture, and urban resource flows.</p>
+<h2 id="social-cultural-and-intellectual-history">Social, Cultural, and Intellectual History</h2>
+<p>This track examines the mental universes, discursive formations, and collective struggles of ordinary historical actors, shifting the focus from high statecraft to bottom-up lived experience and power dynamics.</p>
+<p>History from Below and Working-Class Formation: <a href="https://books.google.com/books?isbn=9780394703220" target="_blank" rel="noopener noreferrer">The Making of the English Working Class by E. P. Thompson (Vintage)</a> - The foundational work of social history from below, arguing that class consciousness was an active, lived relationship created by working people rather than an automatic economic byproduct.</p>
+<p>Microhistory and Popular Mentalities: <a href="https://books.google.com/books?isbn=9780801843877" target="_blank" rel="noopener noreferrer">The Cheese and the Worms: The Cosmos of a Sixteenth-Century Miller by Carlo Ginzburg (Johns Hopkins University Press)</a> - The quintessential methodological model of microhistory, reconstructing an obscure miller’s cosmology from trial records to examine the dynamic interplay between popular culture and dominant clerical authority.</p>
+<p>Discipline, Biopolitics, and Institutional Modernity: <a href="https://books.google.com/books?isbn=9780679752554" target="_blank" rel="noopener noreferrer">Discipline and Punish: The Birth of the Prison by Michel Foucault (Vintage)</a> - The essential theoretical text on surveillance, panopticism, and the rise of carceral institutions that organize modern bodies and social behavior.</p>
+<p>Gender as a Category of Historical Analysis: <a href="https://books.google.com/books?isbn=9780231118576" target="_blank" rel="noopener noreferrer">Gender and the Politics of History by Joan Wallach Scott (Columbia University Press)</a> - The foundational text integrating feminist theory and linguistic analysis into historiography, demonstrating how gender operates as a primary field for signifying relationships of power.</p>
+<h2 id="spatial-history-memory-studies-and-digital-humanities">Spatial History, Memory Studies, and Digital Humanities</h2>
+<p>This track equips advanced independent researchers with computational toolkits, geographic information software, and oral history frameworks to preserve, visualize, and analyze historical evidence.</p>
+<p>Historical GIS and Spatial Humanities: <a href="https://books.google.com/books?isbn=9780521671705" target="_blank" rel="noopener noreferrer">Historical GIS: Technologies, Methodologies, and Scholarship by Ian N. Gregory and Paul S. Ell (Cambridge University Press)</a> - Introduces spatial modeling, historical geodatabases, and cartographic visualization methods for researching historical processes across geographical space.</p>
+<p>Oral History Methodology and Ethics: <a href="https://books.google.com/books?isbn=9780199335466" target="_blank" rel="noopener noreferrer">The Voice of the Past: Oral History by Paul Thompson and Joanna Bornat (Oxford University Press)</a> - The standard field handbook detailing interview design, ethics, institutional guidelines, and the evidentiary value of spoken testimony.</p>
+<p>Narrative and Memory in Oral Testimonies: <a href="https://books.google.com/books?isbn=9780791404300" target="_blank" rel="noopener noreferrer">The Death of Luigi Trastulli and Other Stories: Form and Meaning in Oral History by Alessandro Portelli (SUNY Press)</a> - The classic methodological demonstration of how discrepancies in human memory, symbolic narrative structures, and subjectivity serve as valuable historical evidence.</p>
+<p>Computational Text Analysis and Digital Workflows: <a href="https://programminghistorian.org/" target="_blank" rel="noopener noreferrer">The Programming Historian (ProgHist Ltd)</a> - A peer-reviewed, open-access suite of computational tutorials covering web scraping, natural language processing, topic modeling, and network analysis specifically tailored for historical source corpora.</p>
+<p>Computational Text Analysis and Digital Workflows: <a href="https://chnm.gmu.edu/digitalhistory/" target="_blank" rel="noopener noreferrer">Digital History: A Guide to Gathering, Preserving, and Presenting the Past on the Web by Daniel J. Cohen and Roy Rosenzweig (Roy Rosenzweig Center for History and New Media)</a> - A freely available web guide covering digitization standards, fair-use copyright law, digital archiving, and online historical curation.</p>
+    </article>
+  </main>
 
 </body>
 </html>

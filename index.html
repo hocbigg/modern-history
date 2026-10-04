@@ -1,185 +1,391 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Hocbigg - Modern History</title>
-<link rel="stylesheet" href="/modern-history/style.css">
-<meta name="description" content="Path to a free self-taught education in Modern History!">
+  <title>Hocbigg - Modern History</title>
+  <meta name="description" content="Path to a free self-taught education in Modern History!">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/modern-history/">
+  <link rel="canonical" href="https://hocbigg.github.io/modern-history/">
+  <meta property="og:title" content="Hocbigg - Modern History">
+  <meta property="og:description" content="Path to a free self-taught education in Modern History!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/modern-history/">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Hocbigg - Modern History">
-<meta property="og:description" content="Path to a free self-taught education in Modern History!">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/modern-history/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/modern-history/">Modern-History</a>
-<a href="/modern-history/advanced_topics.html">Advanced Topics</a>
-<a href="/modern-history/projects.html">Projects</a>
-<a href="/modern-history/extras/courses.html">Extra Courses</a>
-<a href="/modern-history/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/modern-history/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/modern-history/">Modern History</a></li>
+      <li><a href="/modern-history/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/modern-history/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/modern-history/extras/courses.html">Extra Courses</a></li>
+      <li><a href="https://github.com/hocbigg/modern-history" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
 
+  <main id="main-content">
+    <article>
 <header class="page-header">
-  <img src="/images/logo.png" alt="">
+  <img src="/images/logo.png" alt="Hocbigg logo">
   <h1>Hocbigg - Modern History</h1>
+  <p class="page-subtitle">Path to a free self-taught education in Modern History!</p>
+  <p class="last-updated"><small>Last updated on: <time datetime="2026-10-01">2026-10-01</time></small></p>
 </header>
-
-<h1 id="contents">Contents</h1>
+<h2 id="introduction">Introduction</h2>
+<p>Modern history investigates the profound structural, political, and cultural transformations that reshaped human societies between the mid-eighteenth century and the present day. Rather than treating the past as a dry catalog of dates and rulers, historical study explores the root causes and consequences of major ruptures: the rise of industrial capitalism, democratic revolutions, imperial expansion and anticolonial resistance, total warfare, ideological polarization, and contemporary globalization. Studying modern history develops critical habits of mind — source criticism, contextual empathy, and causal analysis — that allow you to understand how our interconnected, fragile global order was constructed.</p>
+<p>This curriculum is designed for self-directed learners seeking a thorough, undergraduate-level foundation in modern history. No prior formal background in history or historical research is assumed. The sequence begins with the core mechanics of historical thinking and evidence evaluation before guiding you chronologically through the modern era.</p>
+<h3 id="how-to-navigate-the-sequence">How to Navigate the Sequence</h3>
+<p>Because historical phenomena are deeply cumulative, you should work through the four subjects in order:</p>
 <ul>
-<li><a href="#summary">Summary</a></li>
-<li><a href="#communities">Communities</a></li>
-<li><a href="#curriculum">Curriculum</a></li>
-<li><a href="#code-of-conduct">Code of conduct</a></li>
+<li><strong>Start with Method and Historiography:</strong> Begin with <em>Historical Method and Historiography</em>. Learning how historians evaluate primary sources, identify bias, and navigate competing interpretations ensures that you read subsequent historical accounts as evidence-based arguments rather than unquestioned facts.</li>
+<li><strong>Follow the Chronological Spine:</strong> Proceed sequentially through <em>The Long Nineteenth Century</em>, <em>The Twentieth Century</em>, and <em>Contemporary History and Globalization</em>. The global rivalries, industrial economies, and imperial structures forged in the nineteenth century directly set the stage for the total wars and ideological conflicts of the twentieth century, which in turn established the institutions, borders, and geopolitical fractures of the post-1991 world.</li>
 </ul>
-<h1 id="summary">Summary</h1>
-<p>The Modern History curriculum is a <strong>complete education in Modern History</strong> (primarily from c. 1750 to the present) using online materials.</p>
-<p>Note: When there are courses or books that don't fit into the curriculum but are otherwise of high quality,
-they belong in <a href="extras/courses.html">extras/courses</a>, <a href="extras/readings.html">extras/readings</a>.</p>
-<p><strong><a href="/CONTRIBUTING.html">How to contribute</a></strong></p>
-<h1 id="communities">Communities</h1>
+<h3 id="beyond-the-core">Beyond the Core</h3>
+<p>This curriculum covers only the foundational baseline that every student of modern history should master. Once you have completed these core subjects, you can branch out into specialized areas of inquiry using the companion guides in this series:</p>
+<ul>
+<li>Explore dedicated subfields — such as subaltern studies, comparative mass violence, commodity chains, and historical GIS — in <a href="advanced_topics.html">Advanced Topics</a>.</li>
+<li>Deepen your engagement with field-defining monographs and landmark essays in <a href="extras/readings.html">Readings</a>.</li>
+<li>Explore focused university lecture series and audiovisual deep dives in <a href="extras/courses.html">Courses</a>.</li>
+</ul>
+<h3 id="communities">Communities</h3>
 <ul>
 <li>Forums:<ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://historum.com/">Historum</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://reshistorica.forumotion.com/">Res Historica</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.alternatehistory.com/forum/">AlternateHistory.com</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.thehistorypress.co.uk/forum/">History Forum at The History Press</a></li>
+<li><a href="https://historum.com/" target="_blank" rel="noopener noreferrer">Historum</a></li>
+<li><a href="https://reshistorica.forumotion.com/" target="_blank" rel="noopener noreferrer">Res Historica</a></li>
+<li><a href="https://www.alternatehistory.com/forum/" target="_blank" rel="noopener noreferrer">AlternateHistory.com</a></li>
+<li><a href="https://www.thehistorypress.co.uk/forum/" target="_blank" rel="noopener noreferrer">History Forum at The History Press</a></li>
 </ul>
 </li>
 <li>Subreddits:<ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/history/">r/history</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/AskHistorians/">r/AskHistorians</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/HistoryPorn/">r/HistoryPorn</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/AcademicHistory/">r/AcademicHistory</a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/r/HistoryWhatIf/">r/HistoryWhatIf</a></li>
+<li><a href="https://www.reddit.com/r/history/" target="_blank" rel="noopener noreferrer">r/history</a></li>
+<li><a href="https://www.reddit.com/r/AskHistorians/" target="_blank" rel="noopener noreferrer">r/AskHistorians</a></li>
+<li><a href="https://www.reddit.com/r/HistoryPorn/" target="_blank" rel="noopener noreferrer">r/HistoryPorn</a></li>
+<li><a href="https://www.reddit.com/r/AcademicHistory/" target="_blank" rel="noopener noreferrer">r/AcademicHistory</a></li>
+<li><a href="https://www.reddit.com/r/HistoryWhatIf/" target="_blank" rel="noopener noreferrer">r/HistoryWhatIf</a></li>
 </ul>
 </li>
-<li>You can also interact through <a target="_blank" rel="noopener noreferrer" href="https://github.com/hocbigg/modern-history/issues">GitHub issues</a>. If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more <a href="/CONTRIBUTING.html">here</a>.</li>
-<li>
-<p>Join our Discord server (for discussions around this and other curricula): </p>
-<p><a target="_blank" rel="noopener noreferrer" href="https://discord.gg/KHqAv4Nvm5"><img alt="discord link" src="/assets/discord.png" /></a></p>
-</li>
+<li>You can also interact through <a href="https://github.com/hocbigg/modern-history/issues" target="_blank" rel="noopener noreferrer">GitHub issues</a>. If there is a problem with a course, or a change needs to be made to the curriculum, this is the place to start the conversation. Read more <a href="/CONTRIBUTING.html">here</a>.</li>
 </ul>
-<h1 id="curriculum">Curriculum</h1>
-<ul>
-<li><a href="#historical-method-and-historiography">Historical Method and Historiography</a></li>
-<li><a href="#global-chronological-foundations-c-1750present">Global Chronological Foundations c. 1750–Present</a></li>
-<li><a href="#the-twentieth-century-wars-ideologies-and-global-shifts-c-19141991">The Twentieth Century: Wars, Ideologies, and Global Shifts c. 1914–1991</a></li>
-<li><a href="#late-modern--contemporary-history">Late Modern &amp; Contemporary History</a></li>
-</ul>
-<h2 id="how-to-use-this-curriculum">How to use this curriculum</h2>
-<h3 id="core-sections">Core Sections</h3>
-<p>Complete these sections in the following sequence:</p>
-<p><strong>Historical Method and Historiography</strong>: Start here. This section teaches you how historians think, read sources, and build arguments. It is the foundation for everything else.</p>
-<p><strong>Global Chronological Foundations (c. 1750–Present)</strong>: Next, get the big-picture timeline and major global transformations of the modern era. This gives you the overall framework you will refer to throughout the rest of your studies.</p>
-<p><strong>The Twentieth Century: Wars, Ideologies, and Global Shifts (c. 1914–1991)</strong>: Covers the era of world wars, revolutions, decolonization, and Cold War – essential bridge to the contemporary world.</p>
-<p><strong>Late Modern &amp; Contemporary History</strong>: Finish the core by bringing the story up to the very recent past and the world we live in today. This section ties the earlier periods together and helps you see long-term patterns.</p>
-<h2 id="historical-method-and-historiography">Historical Method and Historiography</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Book</th>
-<th>Online Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>The Craft of History</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/historianscraft00blocrich">Marc Bloch, <em>The Historian’s Craft</em></a></td>
-<td></td>
-</tr>
-<tr>
-<td>Historical Thinking and Evidence</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/pursuitofhistory0006tosh">John Tosh, <em>The Pursuit of History</em> (Archive.org)</a></td>
-<td></td>
-</tr>
-<tr>
-<td>Historiography</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/whatishistory0000carr">E.H. Carr, <em>What Is History?</em></a></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="global-chronological-foundations-c-1750present">Global Chronological Foundations (c. 1750–Present)</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Book</th>
-<th>Online Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Modern World History Survey</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.macmillanihe.com/page/detail/mastering-modern-world-history-norman-lowe/?K=9781350933408">Norman Lowe, <em>Mastering Modern World History</em></a></td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.coursera.org/learn/modern-world">Coursera: <em>The Modern World, Part One: Global History from 1760 to 1910</em></a>; <a target="_blank" rel="noopener noreferrer" href="https://www.coursera.org/learn/modern-world-2">Part Two: 1910–Present</a> – free to audit</td>
-</tr>
-<tr>
-<td>The Long Nineteenth Century</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/ageofrevolutione0000hobs">Eric Hobsbawm, <em>The Age of Revolution</em></a> (supplementary)</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="the-twentieth-century-wars-ideologies-and-global-shifts-c-19141991">The Twentieth Century: Wars, Ideologies, and Global Shifts (c. 1914–1991)</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Book</th>
-<th>Online Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Global Twentieth Century Overview</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://www.macmillanihe.com/page/detail/mastering-modern-world-history-norman-lowe/?K=9781350933408">Norman Lowe, <em>Mastering Modern World History</em> (relevant chapters)</a></td>
-<td>Coursera Modern World Part Two (above)</td>
-</tr>
-</tbody>
-</table>
-<h2 id="late-modern-contemporary-history">Late Modern &amp; Contemporary History</h2>
-<table>
-<thead>
-<tr>
-<th>Subject</th>
-<th>Book</th>
-<th>Online Course</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Post-1945 World</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/postwarhistoryo0000judt">Tony Judt, <em>Postwar: A History of Europe Since 1945</em></a></td>
-<td></td>
-</tr>
-<tr>
-<td>Contemporary Global History</td>
-<td><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/globalcoldwarthi0000west">Odd Arne Westad, <em>The Global Cold War</em> (and post-Cold War chapters if available)</a>; supplement with recent chapters in Lowe</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h1 id="code-of-conduct">Code of conduct</h1>
-<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/hocbigg/code-of-conduct">Hocbigg's code of conduct</a>.</p>
-</article>
-</main>
+<h2 id="curriculum">Curriculum</h2>
+<h3 id="historical-method-and-historiography">Historical Method and Historiography</h3>
+<p>This subject introduces the foundational principles of historical inquiry, source criticism, evidence evaluation, and the major historiographical debates that govern how historians interpret the past.</p>
+<p><a href="https://www.open.edu/openlearn/history-the-arts/what-do-historians-do/content-section-0" target="_blank" rel="noopener noreferrer">What do historians do? (OpenLearn / The Open University)</a> - A practical, open-access course recommended as a hands-on starting point before tackling academic texts, teaching how historians evaluate primary evidence, material culture, and conflicting accounts.</p>
+<p><a href="https://books.google.com/books?isbn=9780367902469" target="_blank" rel="noopener noreferrer">The Pursuit of History: Aims, Methods and New Directions in the Study of History by John Tosh (Routledge)</a> - The primary foundational textbook for this subject, systematically explaining historical thinking, primary versus secondary sources, and modern historiographical schools.</p>
+<p><a href="https://books.google.com/books?isbn=9780141010205" target="_blank" rel="noopener noreferrer">What Is History? by E. H. Carr (Penguin Books)</a> - A classic reflective companion to Tosh, examining historical objectivity, the selection of facts, and the dialogue between past and present.</p>
+<p><a href="https://books.google.com/books?isbn=9780394705125" target="_blank" rel="noopener noreferrer">The Historian's Craft by Marc Bloch (Vintage)</a> - A classic alternative to Carr, offering a humanist defense of history that emphasizes observation, causation, and empathy from the Annales school perspective.</p>
+<h3 id="the-long-nineteenth-century-and-global-modernity-c-17501914">The Long Nineteenth Century and Global Modernity (c. 1750–1914)</h3>
+<p>This subject examines the global emergence of modernity through the dual industrial and political revolutions, the consolidation of modern nation-states, and European imperial expansion.</p>
+<p><a href="https://openstax.org/details/books/world-history-volume-2" target="_blank" rel="noopener noreferrer">World History, Volume 2: from 1400 (OpenStax)</a> - The foundational open-access textbook spine for this era; read Chapters 17 through 25 for a reliable factual baseline on democratic revolutions, industrialization, and global imperialism.</p>
+<p><a href="https://www.coursera.org/learn/modern-world" target="_blank" rel="noopener noreferrer">The Modern World, Part One: Global History from 1760 to 1910 (Coursera / University of Virginia)</a> - The primary video lecture survey to pair with your textbook reading, providing an overarching global narrative of the economic, institutional, and geopolitical revolutions that created modern international order.</p>
+<p><a href="https://oyc.yale.edu/history/hist-202" target="_blank" rel="noopener noreferrer">European Civilization, 1648–1945 (Open Yale Courses / John Merriman)</a> - A complementary regional lecture option; watch Lectures 10 through 18 alongside the global survey for an in-depth treatment of European industrialization, social conflict, and the road to 1914.</p>
+<p><a href="https://books.google.com/books?isbn=9780631236160" target="_blank" rel="noopener noreferrer">The Birth of the Modern World, 1780–1914: Global Connections and Comparisons by C. A. Bayly (Wiley-Blackwell)</a> - The primary advanced monograph to read after establishing your textbook foundation, demonstrating how imperial expansion, state formation, and religious revivals unfolded concurrently across Asia, Africa, and the Atlantic world.</p>
+<p><a href="https://books.google.com/books?isbn=9780679772538" target="_blank" rel="noopener noreferrer">The Age of Revolution: 1789–1848 by Eric Hobsbawm (Vintage)</a> - An alternative European-focused synthesis to Bayly, interpreting early modernity through the concept of the "dual revolution" — the British economic transformation and the French political rupture.</p>
+<h3 id="the-twentieth-century-total-war-ideological-conflict-and-the-cold-war-19141991">The Twentieth Century: Total War, Ideological Conflict, and the Cold War (1914–1991)</h3>
+<p>This subject covers the systemic crises of the short twentieth century, including two world wars, the struggle between democratic and totalitarian regimes, global decolonization, and the Cold War.</p>
+<p><a href="https://openstax.org/details/books/world-history-volume-2" target="_blank" rel="noopener noreferrer">World History, Volume 2: from 1400 (OpenStax)</a> - The core open-access textbook spine; read Chapters 26 through 31 for a comprehensive survey of total warfare, the interwar crisis, fascism, communism, and decolonization.</p>
+<p><a href="https://books.google.com/books?isbn=9781350933408" target="_blank" rel="noopener noreferrer">Mastering Modern World History by Norman Lowe and John Traynor (Bloomsbury Academic)</a> - A paid, modular textbook alternative to OpenStax, offering structured chapter summaries, clear diplomatic chronologies, and accessible breakdowns of 20th-century international crises.</p>
+<p><a href="https://www.coursera.org/learn/modern-world-2" target="_blank" rel="noopener noreferrer">The Modern World, Part Two: Global History since 1910 (Coursera / University of Virginia)</a> - The primary global lecture survey for this period; complete Modules 1 through 5 to trace the world wars, totalitarian movements, and Cold War confrontations.</p>
+<p><a href="https://oyc.yale.edu/history/hist-202" target="_blank" rel="noopener noreferrer">European Civilization, 1648–1945 (Open Yale Courses / John Merriman)</a> - A complementary European lecture series; watch Lectures 19 through 24 for an intensive academic exploration of the First World War, the Russian Revolution, fascism, and World War II.</p>
+<p><a href="https://books.google.com/books?isbn=9780679730057" target="_blank" rel="noopener noreferrer">The Age of Extremes: A History of the World, 1914–1991 by Eric Hobsbawm (Vintage)</a> - The primary synthesis monograph for this subject, dividing the twentieth century into the Age of Catastrophe (1914–1945), the Golden Age (1945–1973), and the Landslide (1973–1991).</p>
+<p><a href="https://books.google.com/books?isbn=9780521703147" target="_blank" rel="noopener noreferrer">The Global Cold War: Third World Interventions and the Making of Our Times by Odd Arne Westad (Cambridge University Press)</a> - A complementary monograph to Hobsbawm, specifically correcting Eurocentric accounts by examining how superpower rivalry intersected with revolutionary politics and nation-building across the Global South.</p>
+<h3 id="contemporary-history-and-globalization-c-1990present">Contemporary History and Globalization (c. 1990–Present)</h3>
+<p>This subject surveys the post-Cold War international order, focusing on the collapse of the Soviet Union, European integration, accelerating globalization, and emerging geopolitical multipolarity.</p>
+<p><a href="https://openstax.org/details/books/world-history-volume-2" target="_blank" rel="noopener noreferrer">World History, Volume 2: from 1400 (OpenStax)</a> - The core open-access textbook spine; read the concluding chapters (Chapters 32 and 33) for a concise baseline on contemporary economic globalization, technological shifts, and global environmental governance.</p>
+<p><a href="https://www.coursera.org/learn/modern-world-2" target="_blank" rel="noopener noreferrer">The Modern World, Part Two: Global History since 1910 (Coursera / University of Virginia)</a> - Serves as the video lecture component for this subject; complete the final two modules (Modules 6 and 7) of the course started in Subject 3 to analyze the post-Soviet transition, global conflicts, and the 21st-century international order.</p>
+<p><a href="https://books.google.com/books?isbn=9781350933408" target="_blank" rel="noopener noreferrer">Mastering Modern World History by Norman Lowe and John Traynor (Bloomsbury Academic)</a> - A concise paid textbook option; if continuing with this book from Subject 3, study the final units for clear overviews of post-Soviet state transitions, the War on Terror, and the economic rise of East Asia.</p>
+<p><a href="https://books.google.com/books?isbn=9780357364864" target="_blank" rel="noopener noreferrer">Contemporary World History by William J. Duiker (Cengage Learning)</a> - A comprehensive commercial textbook alternative to OpenStax and Lowe, offering detailed regional chapters examining post-Cold War political, social, and economic developments across Latin America, Africa, Asia, and the Middle East.</p>
+<p><a href="https://books.google.com/books?isbn=9780143037750" target="_blank" rel="noopener noreferrer">Postwar: A History of Europe Since 1945 by Tony Judt (Penguin Books)</a> - A complementary narrative monograph providing an in-depth study of European reconstruction, the fall of the Soviet bloc, and the challenges of post-1989 continental integration.</p>
+    </article>
+  </main>
 
 </body>
 </html>

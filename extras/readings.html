@@ -1,112 +1,507 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
-<title>Great Readings</title>
-<link rel="stylesheet" href="/modern-history/style.css">
-<meta name="description" content="">
+  <title>Great Readings</title>
+  <meta name="description" content="Great Readings curriculum by hocbigg.">
+  <meta name="author" content="hocbigg">
 
-<link rel="canonical" href="https://hocbigg.github.io/modern-history/">
+  <link rel="canonical" href="https://hocbigg.github.io/modern-history/extras/readings.html">
+  <meta property="og:title" content="Great Readings">
+  <meta property="og:description" content="Great Readings curriculum by hocbigg.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hocbigg.github.io/modern-history/extras/readings.html">
+  <link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
 
-<meta property="og:title" content="Great Readings">
-<meta property="og:description" content="">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://hocbigg.github.io/modern-history/">
-<meta name="author" content="hocbigg">
-<link rel="icon" href="https://hocbigg.github.io/images/favicon.ico">
+  <style>
+:root {
+  color-scheme: light dark;
+
+  --bg: #ffffff;
+  --fg: #1a1a1a;
+  --muted: #595959;
+  --border: #e0e0e0;
+  --th-bg: #f6f8fa;
+  --code-bg: #f4f4f4;
+  --link: #0969da;
+  --focus-ring: #0969da;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #8b949e;
+    --border: #30363d;
+    --th-bg: #161b22;
+    --code-bg: #161b22;
+    --link: #58a6ff;
+    --focus-ring: #58a6ff;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1.5rem auto;
+  max-width: 60rem;
+  padding: 0 1rem 3.5rem;
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 1.15rem/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Cú pháp hiện đại thay thế cho word-wrap */
+  overflow-wrap: break-word;
+}
+
+.site-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 1rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+nav a:hover, 
+nav a:focus-visible {
+  color: var(--fg);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+nav .nav-brand {
+  color: var(--fg);
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.skip-link {
+  position: absolute;
+  transform: translateY(-150%);
+  left: 1rem;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: transform 0.2s ease;
+}
+
+.skip-link:focus {
+  transform: translateY(1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.3;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--fg);
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.15rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+p, ul, ol, blockquote, table {
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+li > ul,
+li > ol {
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+}
+
+li {
+  margin-bottom: 0.25rem;
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  text-decoration-thickness: 2px;
+}
+
+a:has(img) {
+  text-decoration: none;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.page-header .page-subtitle {
+  color: var(--muted);
+  font-size: 1.15rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header img {
+  margin: 0 auto 1rem;
+  display: block;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.875em;
+  background-color: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+pre {
+  background-color: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  tab-size: 2;
+}
+
+pre code {
+  background: transparent;
+  padding: 0;
+  border: none;
+  font-size: 0.9rem;
+  border-radius: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 0.6rem 0.75rem;
+  vertical-align: top;
+}
+
+th {
+  background-color: var(--th-bg);
+  font-weight: 600;
+}
+
+blockquote {
+  margin-inline: 0;
+  border-left: 4px solid var(--border);
+  padding-left: 1rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  body {
+    max-width: none;
+    color: #000;
+    background: #fff;
+  }
+  .skip-link, nav {
+    display: none;
+  }
+}
+  </style>
 </head>
-
 <body>
 
-<nav>
-<a href="/">Hocbigg</a>
-<a href="/modern-history/">Modern-History</a>
-<a href="/modern-history/advanced_topics.html">Advanced Topics</a>
-<a href="/modern-history/projects.html">Projects</a>
-<a href="/modern-history/extras/courses.html">Extra Courses</a>
-<a href="/modern-history/extras/readings.html">Extra Reading</a>
-<a href="https://github.com/hocbigg/modern-history/" target="_blank">View on Github</a>
-</nav>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<main>
-<article>
+  <header class="site-header">
+    <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="https://hocbigg.github.io/" class="nav-brand">Hocbigg</a></li>
+      <li><a href="/modern-history/">Modern History</a></li>
+      <li><a href="/modern-history/advanced_topics.html">Advanced Topics</a></li>
+      <li><a href="/modern-history/extras/readings.html">Extra Readings</a></li>
+      <li><a href="/modern-history/extras/courses.html">Extra Courses</a></li>
+      <li><a href="https://github.com/hocbigg/modern-history" target="_blank" rel="noopener noreferrer">GitHub<span class="sr-only"> (opens in new tab)</span></a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <article>
 
 <h1 id="great-readings">Great Readings</h1>
-<p>This document consists of great books or articles on Modern History.
-Some are here because there is a course covering the same material;
-some are just great books that you should read at some point in your career.</p>
-<p>Once you have made it through most of the curriculum, knowing whether a book is worth your time will become easier.
-Or, if you are struggling in one of the courses, perhaps reading a book on the subject will help.</p>
-<h2 id="general-modern-history">General Modern History</h2>
-<table>
+<p>A curated collection of field-defining monographs, landmark journal papers, and foundational texts in Modern History that have established new paradigms, challenged dogmas, and reshaped how historians interpret the modern world.</p>
+<h2 id="historiographical-methodological-breakthroughs">Historiographical &amp; Methodological Breakthroughs</h2>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
 <thead>
 <tr>
-<th style="text-align: left;">Name</th>
-<th style="text-align: center;">Author(s)</th>
+<th style="text-align: left;">Title</th>
+<th style="text-align: left;">Author(s)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/postwarhistoryof00judt">Postwar: A History of Europe Since 1945</a></td>
-<td style="text-align: center;">Tony Judt</td>
+<td style="text-align: left;"><a href="https://archive.org/details/cheeseworms00ginz" target="_blank" rel="noopener noreferrer"><em>The Cheese and the Worms: The Cosmos of a Sixteenth-Century Miller</em></a></td>
+<td style="text-align: left;">Carlo Ginzburg</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/ageofextremeshis0000hobs">The Age of Extremes: The Short Twentieth Century, 1914–1991</a></td>
-<td style="text-align: center;">Eric Hobsbawm</td>
+<td style="text-align: left;"><a href="https://archive.org/details/onhistory0000brau" target="_blank" rel="noopener noreferrer"><em>History and the Social Sciences: The Longue Durée</em></a></td>
+<td style="text-align: left;">Fernand Braudel</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/gunsgermssteel00jare">Guns, Germs, and Steel: The Fates of Human Societies</a></td>
-<td style="text-align: center;">Jared Diamond (influential on modern global history)</td>
+<td style="text-align: left;"><a href="https://www.jstor.org/stable/1864376" target="_blank" rel="noopener noreferrer"><em>Gender: A Useful Category of Historical Analysis</em></a></td>
+<td style="text-align: left;">Joan Wallach Scott</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://archive.org/details/futurespastonsem0000kose" target="_blank" rel="noopener noreferrer"><em>Futures Past: On the Semantics of Historical Time</em></a></td>
+<td style="text-align: left;">Reinhart Koselleck</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://archive.org/details/silencingpastpow0000trou" target="_blank" rel="noopener noreferrer"><em>Silencing the Past: Power and the Production of History</em></a></td>
+<td style="text-align: left;">Michel-Rolph Trouillot</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://archive.org/details/whatishistory0000carr" target="_blank" rel="noopener noreferrer"><em>What Is History?</em></a></td>
+<td style="text-align: left;">E. H. Carr</td>
 </tr>
 </tbody>
-</table>
-<h2 id="thematic">Thematic</h2>
-<table>
+</table></div>
+<h2 id="capitalism-labor-and-global-political-economy">Capitalism, Labor, and Global Political Economy</h2>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
 <thead>
 <tr>
-<th style="text-align: left;">Name</th>
-<th style="text-align: center;">Author(s)</th>
+<th style="text-align: left;">Title</th>
+<th style="text-align: left;">Author(s)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/bloodlandseurope0000snyd">Bloodlands: Europe Between Hitler and Stalin</a></td>
-<td style="text-align: center;">Timothy Snyder</td>
+<td style="text-align: left;"><a href="https://archive.org/details/bwb_S0-AXC-434" target="_blank" rel="noopener noreferrer"><em>The Great Transformation: The Political and Economic Origins of Our Time</em></a></td>
+<td style="text-align: left;">Karl Polanyi</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://www.amazon.com/Empire-Britain-Made-Modern-World/dp/014198791X">Empire: How Britain Made the Modern World</a></td>
-<td style="text-align: center;">Niall Ferguson</td>
+<td style="text-align: left;"><a href="https://www.jstor.org/stable/649749" target="_blank" rel="noopener noreferrer"><em>Time, Work-Discipline, and Industrial Capitalism</em></a></td>
+<td style="text-align: left;">E. P. Thompson</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/wretchedearth0000fano">The Wretched of the Earth</a></td>
-<td style="text-align: center;">Frantz Fanon</td>
+<td style="text-align: left;"><a href="https://archive.org/details/makingofenglishw0000thom" target="_blank" rel="noopener noreferrer"><em>The Making of the English Working Class</em></a></td>
+<td style="text-align: left;">E. P. Thompson</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://archive.org/details/capitalismslaver0000unse" target="_blank" rel="noopener noreferrer"><em>Capitalism and Slavery</em></a></td>
+<td style="text-align: left;">Eric Williams</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://archive.org/details/sweetnesspowerpl0000mint" target="_blank" rel="noopener noreferrer"><em>Sweetness and Power: The Place of Sugar in Modern History</em></a></td>
+<td style="text-align: left;">Sidney W. Mintz</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://archive.org/details/greatdivergence0000unse" target="_blank" rel="noopener noreferrer"><em>The Great Divergence: China, Europe, and the Making of the Modern World Economy</em></a></td>
+<td style="text-align: left;">Kenneth Pomeranz</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://archive.org/details/empireofcottongl0000beck" target="_blank" rel="noopener noreferrer"><em>Empire of Cotton: A Global History</em></a></td>
+<td style="text-align: left;">Sven Beckert</td>
 </tr>
 </tbody>
-</table>
-<h2 id="regional">Regional</h2>
-<table>
+</table></div>
+<h2 id="empire-race-and-subaltern-epistemologies">Empire, Race, and Subaltern Epistemologies</h2>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
 <thead>
 <tr>
-<th style="text-align: left;">Name</th>
-<th style="text-align: center;">Author(s)</th>
+<th style="text-align: left;">Title</th>
+<th style="text-align: left;">Author(s)</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/maounknownstory0000chan">Mao: The Unknown Story</a></td>
-<td style="text-align: center;">Jung Chang and Jon Halliday</td>
+<td style="text-align: left;"><a href="https://archive.org/details/blackjacobins00clrj" target="_blank" rel="noopener noreferrer"><em>The Black Jacobins: Toussaint L'Ouverture and the San Domingo Revolution</em></a></td>
+<td style="text-align: left;">C. L. R. James</td>
 </tr>
 <tr>
-<td style="text-align: left;"><a target="_blank" rel="noopener noreferrer" href="https://archive.org/details/burymyheartatwou00brow">Bury My Heart at Wounded Knee: An Indian History of the American West</a></td>
-<td style="text-align: center;">Dee Brown</td>
+<td style="text-align: left;"><a href="https://archive.org/details/discourseoncolon00cs" target="_blank" rel="noopener noreferrer"><em>Discourse on Colonialism</em></a></td>
+<td style="text-align: left;">Aimé Césaire</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://archive.org/details/wretchedearth0000fano" target="_blank" rel="noopener noreferrer"><em>The Wretched of the Earth</em></a></td>
+<td style="text-align: left;">Frantz Fanon</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://archive.org/details/orientalism0000said" target="_blank" rel="noopener noreferrer"><em>Orientalism</em></a></td>
+<td style="text-align: left;">Edward W. Said</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://archive.org/details/provincializinge0000chak" target="_blank" rel="noopener noreferrer"><em>Provincializing Europe: Postcolonial Thought and Historical Difference</em></a></td>
+<td style="text-align: left;">Dipesh Chakrabarty</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://archive.org/details/imaginedcommunit0000ande" target="_blank" rel="noopener noreferrer"><em>Imagined Communities: Reflections on the Origin and Spread of Nationalism</em></a></td>
+<td style="text-align: left;">Benedict Anderson</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://archive.org/details/blackreconstruct00dubo" target="_blank" rel="noopener noreferrer"><em>Black Reconstruction in America: 1860–1880</em></a></td>
+<td style="text-align: left;">W. E. B. Du Bois</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://www.gutenberg.org/ebooks/408" target="_blank" rel="noopener noreferrer"><em>The Souls of Black Folk</em></a></td>
+<td style="text-align: left;">W. E. B. Du Bois</td>
 </tr>
 </tbody>
-</table>
-</article>
-</main>
+</table></div>
+<h2 id="totalitarianism-ideology-and-mass-violence">Totalitarianism, Ideology, and Mass Violence</h2>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
+<thead>
+<tr>
+<th style="text-align: left;">Title</th>
+<th style="text-align: left;">Author(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://archive.org/details/originsoftotalit0000aren" target="_blank" rel="noopener noreferrer"><em>The Origins of Totalitarianism</em></a></td>
+<td style="text-align: left;">Hannah Arendt</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://archive.org/details/arendt-hannah-eichmann-in-jerusalem" target="_blank" rel="noopener noreferrer"><em>Eichmann in Jerusalem: A Report on the Banality of Evil</em></a></td>
+<td style="text-align: left;">Hannah Arendt</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://archive.org/details/drownedsaved0000levi" target="_blank" rel="noopener noreferrer"><em>The Drowned and the Saved</em></a></td>
+<td style="text-align: left;">Primo Levi</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://archive.org/details/ordinarymen00chri" target="_blank" rel="noopener noreferrer"><em>Ordinary Men: Reserve Police Battalion 101 and the Final Solution in Poland</em></a></td>
+<td style="text-align: left;">Christopher R. Browning</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://archive.org/details/modernityholocau0000baum" target="_blank" rel="noopener noreferrer"><em>Modernity and the Holocaust</em></a></td>
+<td style="text-align: left;">Zygmunt Bauman</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://archive.org/details/bloodlandseurope0000snyd" target="_blank" rel="noopener noreferrer"><em>Bloodlands: Europe Between Hitler and Stalin</em></a></td>
+<td style="text-align: left;">Timothy Snyder</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="power-institutions-and-environmental-modernity">Power, Institutions, and Environmental Modernity</h2>
+<div class="table-wrapper" tabindex="0" role="region" aria-label="Scrollable table"><table>
+<thead>
+<tr>
+<th style="text-align: left;">Title</th>
+<th style="text-align: left;">Author(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><a href="https://archive.org/details/disciplinepunish0000fouc" target="_blank" rel="noopener noreferrer"><em>Discipline and Punish: The Birth of the Prison</em></a></td>
+<td style="text-align: left;">Michel Foucault</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://archive.org/details/seeinglikestateh00scot_0" target="_blank" rel="noopener noreferrer"><em>Seeing Like a State: How Certain Schemes to Improve the Human Condition Have Failed</em></a></td>
+<td style="text-align: left;">James C. Scott</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://archive.org/details/ecologicalimperi0000cros" target="_blank" rel="noopener noreferrer"><em>Ecological Imperialism: The Biological Expansion of Europe, 900–1900</em></a></td>
+<td style="text-align: left;">Alfred W. Crosby</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://archive.org/details/somethingnewunde0000mcne" target="_blank" rel="noopener noreferrer"><em>Something New Under the Sun: An Environmental History of the Twentieth-Century World</em></a></td>
+<td style="text-align: left;">J. R. McNeill</td>
+</tr>
+<tr>
+<td style="text-align: left;"><a href="https://archive.org/details/allthatissolidme0000berm" target="_blank" rel="noopener noreferrer"><em>All That Is Solid Melts into Air: The Experience of Modernity</em></a></td>
+<td style="text-align: left;">Marshall Berman</td>
+</tr>
+</tbody>
+</table></div>
+    </article>
+  </main>
 
 </body>
 </html>
